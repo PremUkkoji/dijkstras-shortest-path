@@ -1,0 +1,73 @@
+.custom-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.root{
+    .controllers{
+        padding: 20px;
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .message{
+        text-align: center;
+        font-family: 'Lato-Regular';
+        font-size: 18px;
+    }
+
+    .board{
+        padding: 20px;
+        .board-container{
+            margin: auto;
+            border: 1px solid #d3d3d3;
+            width: fit-content;
+            .board-row{
+
+            }
+    
+            .board-col{
+                border: 1px solid #d3d3d3;
+                display: inline-block;
+                line-height: 0.8;
+                cursor: pointer;
+            }
+    
+            .cell-container{
+                padding: 10px;
+                .cell-text{
+                    margin: 0px;
+                    display: inline-block;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.source{
+    background-color: #f05454;
+}
+
+.destination{
+    background-color: #4bdf38;
+}
+
+.barrier{
+    background-color: #090e09;
+}
+
+.path{
+    background-color: #38dadf;
+}
+
+.visited{
+    background-color: #d4e258;
+}
